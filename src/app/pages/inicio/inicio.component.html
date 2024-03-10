@@ -1,0 +1,14 @@
+<h1>O maior acervo de preservação cultural do meio digital.</h1>
+<p>
+    Encontre livros e artigos históricos digitais, catalogados e documentados por nossa curadoria.
+</p>
+<div class="row">
+    <div class="col-md-10 bg-dark text-light m-3">
+        <h2>Encontre o que você quiser</h2>
+        <lt-search-bar></lt-search-bar>
+        <div class="row">
+            <lt-item-thumbnail *ngFor="let item of itemsList" [itemObject]="item" class="col-md-3">
+            </lt-item-thumbnail>
+        </div>
+    </div>
+</div>

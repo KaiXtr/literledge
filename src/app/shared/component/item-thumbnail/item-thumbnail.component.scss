@@ -1,0 +1,7 @@
+div#item-thumbnail-content {
+    transition-duration: .2s;
+}
+div#item-thumbnail-content:hover {
+    transform: scale(1.05);
+    cursor: pointer
+}

@@ -22,8 +22,12 @@ export class SidebarComponent {
       href: "/"
     },
     {
+      name: "Info",
+      href: "/info"
+    },
+    {
       name: "Sobre",
-      href: "/about"
+      href: "/quem-somos"
     }
   ]
 }

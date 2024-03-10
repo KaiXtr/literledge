@@ -1,4 +1,7 @@
-<div class="bg-light text-dark p-3 m-3">
+<div id="item-thumbnail-content" class="bg-light text-dark p-3 m-3" routerLink="info">
+    <figure class="img-thumbnail">
+        <img src="{{itemObject.imgSrc}}" alt="{{itemObject.titulo}}">
+    </figure>
     <h3>{{itemObject.titulo}}</h3>
     <span>{{itemObject.autor}} - {{itemObject.ano}}</span>
 </div>

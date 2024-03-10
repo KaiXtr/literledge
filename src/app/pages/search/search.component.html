@@ -1,0 +1,25 @@
+<h3>Buscas para "{{busca}}"</h3>
+<div class="row">
+    <div class="col-md-2">
+        <div class="bg-dark text-light m-3">
+            <h3>Filtros</h3>
+            <ul>
+                <li>
+                    <input type="checkbox"> Filtro
+                </li>
+                <li>
+                    <input type="checkbox"> Filtro
+                </li>
+                <li>
+                    <input type="checkbox"> Filtro
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-10 bg-dark text-light m-3">
+        <div class="row">
+            <lt-item-thumbnail *ngFor="let item of itemsList" [itemObject]="item" class="col-md-3">
+            </lt-item-thumbnail>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div>
+    <form *ngIf="!recuperandoSenha">
+        <h3>Entrar</h3>
+        <div class="form-group">
+            <label for="username">Usuário</label>
+            <input class="form-control" type="text" name="username" placeholder="fulano@mail.com">
+        </div>
+        <div class="form-group">
+            <label for="password">Senha</label>
+            <input class="form-control" type="password" name="password">
+        </div>
+        <input class="form" type="checkbox" name="remember"> Lembre-se de mim
+        <div class="button-group">
+            <button class="btn btn-success" type="submit">Entrar</button>
+        </div>
+        <span>
+            <a (click)="esqueciSenha()">Esqueci minha senha</a>
+        </span>
+        <span>
+            <a routerLink="cadastro">Não tenho cadastro</a>
+        </span>
+    </form>
+    <form *ngIf="recuperandoSenha">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" name="email">
+        </div>
+        <div class="button-group">
+            <button class="btn btn-success" type="submit" (click)="recuperarSenha()">Recuperar senha</button>
+        </div>
+    </form>
+</div>
